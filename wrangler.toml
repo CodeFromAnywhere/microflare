@@ -1,3 +1,4 @@
 name = "microflare"
+compatibility_date = "2024-10-15"
 assets = { directory= "./" }
 main = "index.js"
