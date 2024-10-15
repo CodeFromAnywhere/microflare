@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Microflare</title>
+</head>
+
+<body>
+    <script type="module">
+        import { add } from "./index.js";
+
+        const addNumbers = () => {
+            const a = Number(document.getElementById('a').value);
+            const b = Number(document.getElementById('b').value);
+            alert("result:" + add(a, b));
+        }
+
+        document.getElementById('add').addEventListener('click', addNumbers);
+
+    </script>
+
+    <h1>microflare</h1>
+
+    <p>We're using a static file as function, but that same static file also is a worker. Having no secrets has the
+        advantage of being able to serve code to the end-user.</p>
+
+    <form action="add" method="GET">
+        <p>Please fill in 2 numbers:</p>
+        <input placeholder="A" name="a" id="a">
+        <br>
+        <input placeholder="B" name="b" id="b">
+        <br><br>
+        <button>run add via worker</button>
+    </form>
+    <button id="add">run add
+        via
+        your
+        own
+        browser</button>
+    <hr>
+    <a href="openapi.html">openapi</a>
+
+</body>
+
+</html>
