@@ -17,12 +17,12 @@ TODO:
 - openapi can be generated based on code
 - html can be generated based on openapi
 
-[The dream](com.actionschema.calculator.ts) is to have an inverse domain typescript file for every domain be hosted as what we see here, registered in an API search engine. There's really not much more to it!
+[The dream](microflare.actionschema.workers.dev.ts) is to have a domainname typescript file for every domain be hosted as what we see here, registered in an API search engine. There's really not much more to it!
 
 Cherry on the cake: being able to access this like this from any other worker:
 
 ```ts
-com.actionschema.calculator.add(1, 2);
+dev.workers.actionschema.microflare.add(1, 2);
 ```
 
-All we need is a `.d.ts` resolver that knows to look at https://calculator.actionschema.com/types.d.ts:
+All we need is a `.d.ts` resolver that knows to look at https://microflare.actionschema.workers.dev/types.d.ts:
