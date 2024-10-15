@@ -19,10 +19,12 @@ TODO:
 
 [The dream](microflare.actionschema.workers.dev.ts) is to have a domainname typescript file for every domain be hosted as what we see here, registered in an API search engine. There's really not much more to it!
 
+Btw, having it in the folder `actionschema.workers.dev` should be sufficient to just call it `microflare.ts`
+
 Cherry on the cake: being able to access this like this from any other worker:
 
 ```ts
 dev.workers.actionschema.microflare.add(1, 2);
 ```
 
-All we need is a `.d.ts` resolver that knows to look at https://microflare.actionschema.workers.dev/types.d.ts:
+All we need is a `.d.ts` resolver that knows to look at https://microflare.actionschema.workers.dev/types.d.ts
