@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "Addition API",
-    "description": "A simple API to perform addition of two numbers",
+    "description": "A simple API to perform addition of two numbers.",
     "version": "1.0.0"
   },
   "paths": {
